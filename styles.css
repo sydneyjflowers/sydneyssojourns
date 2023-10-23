@@ -1,13 +1,19 @@
-/* Apply a different font and color to the first word */
+/* Apply  different font and color to each word*/
 .word1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #9c76da;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+    color: #be76da;
 }
 
-/* Apply a different font and color to the second word */
+
 .word2 {
-    font-family: cursive;
-    color: #9c76da;
+   
+    color: #be76da;
+    font-family: 'Lucida Handwriting', cursive;
+    
+    font-weight: 100;
+    font-size: 65px;
 }
 
 /* Style the header element */
@@ -17,7 +23,362 @@
 
 /* Style the header image and position it to the right */
 #header-image {
-    float: right; /* Float the image to the right */
-    margin-right: 20px; /* Adjust the margin for spacing */
-    max-width: 30%; /* Set the maximum width for the image */
+    margin-left: 10px; 
+    vertical-align: middle; 
 }
+/* Style the navigation menu (use of ID)*/
+#navigation {
+
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* navigation buttons*/
+#navigation li {
+    display: inline-block; /* Display items next to each other */
+    margin-right: 20px; /* Add space between buttons */
+}
+
+/*  navigation links  */
+#navigation a {
+    text-decoration: none;
+    font-family: 'Lucida Handwriting', cursive;
+    padding: 12px 20px; 
+    font-size: 16px;
+    background-color: #EDEDED; /* Background color for the buttons */
+    color: #000000; /* Text color */
+    transition: background-color 0.3s ease; /* transition on hover */
+}
+
+/* Style the navigation links on hover */
+#navigation a:hover {
+    background-color: #E3B3E4; /* Change color on hover */
+}
+/* Style the footer  */
+footer {
+    background-color: #D691EE;
+    padding: 20px; /*  padding for spacing */
+    display: flex; /* Use flexbox for layout control */
+    justify-content: space-between; /* Space out the content horizontally */
+}
+
+/* Style the left section (vertical list of links) */
+#links {
+    display: flex;
+    width: 20%; 
+    flex-direction: column; /*displays items vertically */
+    padding-left: 10px;
+}
+
+/* Style the list */
+#links ul {
+    list-style-type: none;
+    color:#000000;
+    padding: 0;
+   
+}
+
+/* Style the links */
+#links li {
+    margin-bottom: 15px; /* space between list items */
+
+}
+#links a {
+
+    text-decoration: none;
+   padding: 10px 10px;
+   font-size: 18px;
+   color: #000000;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   transition: color .3s ease;
+   align-items: center;
+   
+}
+
+#links a:hover {
+    color:#524f4f;
+}
+
+/* Style the three photos */
+#socials {
+    text-align: center;
+    width: 30%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* align images at the center */
+    align-items: flex-end;
+}
+
+/* Style the images */
+#socials img {
+    max-width: 100%; 
+    margin: 10px 10px; /* space between images */
+}
+
+/* white-background block with a paragraph */
+#contact {
+    background-color: white;
+    padding: 10px; /* spacing */
+    width: 18%; 
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+#contact {
+    border: 1px solid white; /* Border around the contact info */
+    border-radius: 5px;
+}
+#contact br {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #be76da;
+    font-family: 'Lucida Handwriting', cursive;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center; /* Center-align the text */
+}
+   
+.home-image {
+    max-width: 500px; 
+    float: left; /* Float the image to the left */
+    margin-right: 30px; /* margin to the right of the image for spacing */
+    margin-left:120px;
+    margin-bottom: 40px;
+    
+
+}
+.home-content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.home-content  {
+    text-align: justify; /* Justify text */
+    font-family: Georgia, 'Times New Roman', Times, serif ;/* font */
+    font-size: 21px; /*  font size */
+    margin-right: 120px;
+ 
+}
+/*  destination boxes */
+.destination-box {
+   display: flex; 
+    background-color: #D9D9D9; /* Default background color for the boxes */
+    margin: 30px; /* Add margin for spacing between boxes */
+    padding: 17px; /* Add padding within the boxes */
+    margin-left: 170px;
+    margin-right: 170px;
+
+}
+
+/* Style the destination content */
+.destination-content {
+    flex: 1; 
+    text-align: right;
+}
+
+/* Style the right-aligned images */
+.destination-image {
+    max-width: 200px; 
+    align-self: flex-start; /* Align the image to the top of the box */
+  
+}
+.destination-box p {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.domestic {
+    font-family: Papyrus;
+    text-align: center;
+    font-size: 32px;
+}
+
+.abroad {
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+    font-size: 32px;
+}
+
+.dream {
+    font-family: "Brush Script MT", cursive;
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Style the <div> containing the <h3> */
+.subtitle {
+    text-align: center;
+    background-color: #D9D9D9; /* Background color for the <div> */
+    padding: 5px; /* Add padding for spacing */
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Style the <h3> tag within the <div> */
+.subtitle h3 {
+    font-family: Garamond;
+    font-size: 27px; /* Change the font size */
+    font-style: italic;
+}
+/* Style the container for the content */
+.lists {
+    display: flex;
+    justify-content: space-between; /* Create space between the info blocks */
+   
+}
+
+/* Style each info block */
+.list {
+    width: 48%; 
+    width: 48%; 
+    background-color: #D9D9D9; /* Add a background color to the info blocks */
+    padding: 20px; /* Add padding for spacing within the boxes */
+    border: 1px solid #000; /* Add a border for the boxes */
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Style the <h4> tags with the same font and size */
+.list h4 {
+    font-family: Garamond;
+    font-size: 30px; /* Change the font size */
+    text-align: center;
+}
+
+/* Style the <ul> lists */
+.list ul {
+    list-style-type: disc; /* Use disc bullets for the lists */
+    padding-left: 20px; /* Add left padding for the lists */
+    padding-right: 20px;
+    font-family: Garamond;
+    font-size: 30px
+}
+
+.list1 ol li {
+    font-size: 40px;
+    font-family: Garamond;
+    list-style-type: none;
+}
+
+.list ol li {
+    font-size: 25px;
+    font-family: Garamond;
+}
+/* Style the <li> items with different font sizes */
+.list ul li {
+    font-size: 15px; /* Change the font size for list items */
+    font-family: Garamond;
+}
+
+.list1 ul li {
+    list-style-type: none;
+    font-size: 20px;
+}
+/* Style the content container */
+.experience {
+    text-align: center; /* Center-align content */
+}
+
+/* Style the image container */
+.experience-image {
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Style the <p> containing the images */
+.image-container {
+    text-align: center; /* Center-align the images */
+}
+
+/* Style the images */
+.image-container img {
+    max-width: 50%; /* Adjust the width as needed */
+    padding: 40px;
+}
+
+/* Style the content box */
+.content-box {
+    background-color: #D9D9D9; /* Background color for the content box */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align content within the box */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* Style the <h3> with different font and size */
+.content-box h3 {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 30px; /* Change the font size */
+    font-weight: 100;
+}
+
+/* Style the <p> within the content box */
+.content-box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: left;
+    word-spacing: 2px;
+    padding: 20px;
+ 
+    
+    
+}
+/* Style the content container */
+.form-content {
+    text-align: center; /* Center-align content */
+}
+
+/* Style the form title */
+.form-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; /* Change the font size */
+    font-weight: 150;
+}
+
+/* Style the form container */
+.form {
+    width: 50%; 
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #D9D9D9; /* Background color for the form container */
+    margin-bottom: 30px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 10%;
+   
+}
+
+/* form questions and labels */
+.form-question {
+    text-align: left; /* Align the questions and labels to the left */
+    display:flex;
+    justify-content: space-between;
+    margin: 10px ; /* Add vertical margin for spacing */
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+/* form submit button */
+.form-submit {
+    text-align: center; /* Center-align the submit button */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+
+
+
+
