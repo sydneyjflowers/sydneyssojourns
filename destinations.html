@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <link href="styles.css" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CHK7VL1R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M0CHK7VL1R');
+</script>
         <title>Sydney's Sojourns - Destinations</title>
         <meta charset="UTF-8">
         <meta name="description" content="Explore breathtaking travel destinations 
@@ -13,70 +23,90 @@
     </head>
     <body>
         <header>
-         <div>
-            <h1> Sydney's Sojourns <img src="Images/airplane.png" alt="airplane graphic" width="100" height="50"> </h1>
-           
-           <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="preparation.html">Preparation</a></li>
-                <li><a href="experience.html">Experience</a></li>
-            </ul>
-           </nav>
-       
-        </div>
-
-        </header>
+            <div>
+               <h1 id="title">
+               <span class="word1">Sydney's   </span>
+               <span class="word2">Sojourns</span>
+               <img src="Images/airplane.png" alt="airplane graphic" width="200" height="100" id="header-image">
+           </h1>
+   
+              <nav>
+               <ul id="navigation">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="destinations.html">Destinations</a></li>
+                   <li><a href="preparation.html">Preparation</a></li>
+                   <li><a href="experience.html">Experience</a></li>
+               </ul>
+              </nav>
+          
+           </div>
+   
+           </header>
         <main>
 
             <div>
-                <h2>Destinations</h2>
+                <h2>D e s t i n a t i o n s</h2>
             </div>
-            <div>
-    
-                <h3>Domestic Travel</h3>
+            <div class="destination-box" style="background-color: #D9D9D9;">
+            <div class="destination-content">
+                
+                <h3 class="domestic">Domestic Travel</h3>
                 <p>
                     Want to discover new parts of the United States? Click here to explore my favorite domestic journeys!
-                    <img src="Images/tn.jpg" alt="picture of gatlinburg, tennessee mountains" width="90" height="90">
+                  
                 </p>
+            </div>
+                <img src="Images/tn.jpg" alt="picture of gatlinburg, tennessee mountains" width="180" height="190" class="destination-image">
                 </div>
-                <div>
-                <h3>Travel Abroad</h3>
+                <div class="destination-box" style="background-color: #D9D9D9;">
+                    <div class="destination-content">
+                <h3 class="abroad">Travel Abroad</h3>
                 <p>
                     Looking to explore foreign soil? Click here to look through my experiences abroad!
-                    <img src="Images/frog.jpg" alt="picture of a frog in costa rica" width="90" height="90">
+                   
                 </p>
                 </div>
-                <div>
-                <h3>Dream Destinations</h3>
+                <img src="Images/frog.jpg" alt="picture of a frog in costa rica" width="170" height="170" class="destination-image">
+                </div>
+                <div class="destination-box" style="background-color: #D9D9D9;">
+                    <div class="destination-content">
+
+                <h3 class="dream">Dream Destinations</h3>
                 <p>
                     I haven’t had a chance to visit these places yet, but it’s in the works!
-                    <img src="Images/italy.jpg" alt="picture of venice, italy" width="90" height="90">
+                   
                 </p>
+                </div>
+                <img src="Images/italy.jpg" alt="picture of venice, italy" width="180" height="190" class="desintion-image">
             
             </div>
+        
 
 
         </main>
         <footer>
+            <div id="links">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="preparation.html">Preparation</a></li>
                 <li><a href="experience.html">Experience</a></li>
             </ul>
-            <img src="Images/mail.png" alt="email icon" width="20" height="20">
-            <img src="Images/instagram.png" alt="instagram icon" width="20" height="20">
-            <img src="Images/linkedin.png" alt="linkedin icon" width="20" height="20">
-
-            <p>
-                Contact Me!
-                Email:
-                sydneyjflowers@gmail.com
-                Phone:
-                (703)-340-9186
-            </p>
+            </div>
+            <div id="socials">
+            <img src="Images/mail.png" alt="email icon" width="40" height="40">
+            <img src="Images/instagram.png" alt="instagram icon" width="40" height="40">
+            <img src="Images/linkedin.png" alt="linkedin icon" width="40" height="40">
+            </div>
+            <div id="contact">
+                <p>
+                    <h4> Contact Me!</h4>
+                    Email: <br>
+                    sydneyjflowers@gmail.com <br>
+                    Phone: <br>
+                    (703)-340-9186 <br>
+                </p>
+            </div>
 
 
         </footer>
