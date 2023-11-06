@@ -2,6 +2,70 @@
 <html lang="en">
     <head>
         <link href="styles.css" rel="stylesheet">
+        <style>
+            body {
+                background:  linear-gradient(to top, #f7c5d6, #ffffff);
+            /* Adjust the gradient colors as per your preference */
+            margin: 0;
+            padding: 0;
+            form {
+            max-width: 400px;
+            margin: 0 auto;
+            }
+
+        }
+
+        /* Style form questions and labels */
+        .form-question {
+            margin-bottom: 20px;
+            text-align: left; /* Align the questions and labels to the left */
+      display:flex;
+    justify-content: space-between;
+    margin: 10px ; /* Add vertical margin for spacing */
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+   
+        }
+
+        label {
+            display: block;
+        }
+
+        /* Style input elements */
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #3e014b;
+            border-radius: 3px;
+        }
+
+        /* Style the submit button */
+        .form-submit {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #3e014b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Style the file input button (pseudo-element) */
+        input[type="file"]::file-selector-button {
+            background-color: #3e014b;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        </style>
         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CHK7VL1R"></script>
 <script>
@@ -71,19 +135,19 @@
                     <div class="form">
                     <form>
                         <div class="form-question">
-                        <label for="name">Name:</label><br>
+                        <label for="name" style="margin-right:150px">Name:</label><br>
                         <input type="text" id="name" name="name" value=""><br>
                     </div>
                     <div class="form-question">
-                        <label for="story">Your travel story:</label><br>
+                        <label for="story"style="margin-right:115px">Your travel story:</label><br>
                         <input type="text" id="story" name="story" value=""><br><br>
                         </div>
                         <div class="form-question" >
-                        <label for="image">Drop an image:</label> <br>
+                        <label for="image"style="margin-right:130px">Drop an image:</label> <br>
                         <input type="file" id="image" name="image">
                         </div>
                         <div class="form-question">
-                        <label for="questions">Any questions/comments?</label><br>
+                        <label for="questions"style="margin-right:50px">Any questions/comments?</label><br>
                         <input type="text" id="questions" name="questions" value=""><br>
                         </div>
                         <div class="form-submit">
