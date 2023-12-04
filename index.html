@@ -12,7 +12,53 @@
   gtag('js', new Date());
 
   gtag('config', 'G-M0CHK7VL1R');
+
+    // Inline JavaScript for dark mode toggle
+    function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save user preference to localStorage
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+        });
 </script>
+<style>
+          body {
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Styling for the dark mode toggle button */
+        .dark-mode-toggle {
+            background-color: #be76da;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #a410df;
+        }
+    
+</style>
         <title>Sydney's Sojourns - Home</title>
         <meta charset="UTF-8">
         <meta name="description" content="Welcome to Sydney's Sojourns - Your gateway to the world of travel and adventure. Join me while I explore breathtaking destinations, and share my travel tips and experience.">
@@ -22,6 +68,7 @@
 
     </head>
     <body>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <header>
          <div>
             <h1 id="title">
@@ -85,6 +132,7 @@
                 <li><a href="preparation.html">Preparation</a></li>
                 <li><a href="experience.html">Experience</a></li>
             </ul>
+            
             </div>
             <div id="socials">
             <img src="Images/mail.png" alt="email icon" width="40" height="40">
